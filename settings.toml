@@ -1,0 +1,14 @@
+[default]
+env = "DEV"
+namespace = "MyApp"
+debug = false
+log_level = "INFO"
+BROKER = "@format redis://{env[REDIS_HOST]}:6379/0"
+BACKEND = "@format redis://{env[REDIS_HOST]}:6379/0"
+DB = "@format {env[DB_URL]}"
+
+[kubernetes]
+SERVICE_NAMESPACE = "default" 
+PROFILE = "demoapp"
+AWS_REGION = "us-east-2"
+EKS_CLUSTER_NAME = "test-eks-cluster"

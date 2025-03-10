@@ -1,0 +1,10 @@
+celery 
+redis
+tenacity
+kubernetes
+dynaconf
+pydantic
+pydantic-sqlite
+sqlmodel
+boto3
+botocore
